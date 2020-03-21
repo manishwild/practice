@@ -1,0 +1,9 @@
+#mainDiv{
+    background-color: blue;
+    padding: 30px;
+
+}
+#subDiv{
+    height: 30px;
+    background-color: darkred;
+}
