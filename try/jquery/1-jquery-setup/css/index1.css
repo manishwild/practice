@@ -1,0 +1,26 @@
+.div1{
+    width: 300px;
+    margin: auto;
+    background-color: darkolivegreen;
+    text-align: center;
+    display: none;
+}
+.container{
+    margin-top: 100px;
+}
+.collapsetitle{
+    border: 2px solid black;
+    background-color: darkslategrey;
+}
+.collapsetitle>a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: goldenrod;
+}
+.collapseContent{
+    background-color: lightseagreen;
+    border: 2px solid black;
+    padding: 100px;
+    di
+}

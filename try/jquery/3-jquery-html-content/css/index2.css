@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.collapse{
+    background-color: darkcyan;
+    border: 2px solid blue;
+}
+.collapse > h2{
+    background-color: forestgreen;
+    padding: 10px;
+}
+.collapse > h2 > span{
+    cursor: pointer;
+}
+.collapse > div{
+    padding: 10px;
+    display: none;
+}
