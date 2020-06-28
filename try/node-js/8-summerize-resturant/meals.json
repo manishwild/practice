@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Crackles Burger",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/4.png",
+        "price": 5
+    }, {
+        "title": "Bull Burgers",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/5.png",
+        "price": 5
+    }, {
+        "title": "Rocket Burgers",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/6.png",
+        "price": 5
+    }, {
+        "title": "Smokin Burger",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/7.png",
+        "price": 5
+    }, {
+        "title": "Delish Burger",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/8.png",
+        "price": 5
+    }, {
+        "title": "Crackles Burger",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/4.png",
+        "price": 5
+    }, {
+        "title": "Bull Burgers",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/5.png",
+        "price": 5
+    }, {
+        "title": "Bull Burgers",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/5.png",
+        "price": 5
+    }, {
+        "title": "Crackles Burger",
+        "description": "Great way to make your business appear trust and relevant.",
+        "imgUrl": "/img/burger/4.png",
+        "price": 5
+    }, {
+        "title": "sushi burger",
+        "description": "Lecker sushi burger",
+        "imgUrl": "/img/burger/4.png",
+        "price": "6"
+    }, {
+        "title": "good",
+        "description": "this is good burger",
+        "imgUrl": "/img/burger/4.png",
+        "price": "5"
+    }, {
+        "title": "sushi burger",
+        "description": "this is a sushi burger",
+        "imgUrl": "/img/burger/4.png",
+        "price": "5"
+    }, {
+        "title": "sushi burger",
+        "description": "burger burger",
+        "imgUrl": "/img/burger/4.png",
+        "price": "3"
+    }, {
+        "title": "sushi burger",
+        "description": "dgfcgfdgf",
+        "imgUrl": "/uploaded/sushi_burger14.png",
+        "price": "4"
+    }, {
+        "title": "scen",
+        "description": "ddfdf",
+        "imgUrl": "/uploaded/scen14.jpg",
+        "price": "3"
+    }
+]
