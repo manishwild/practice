@@ -4,7 +4,10 @@ const fileupload = require('express-fileupload')
 const cookie = require('cookie-parser')
 const fs = require('fs')
 
-
+//include adminRouter
+const adminRouter = require('./routes/adminRouter')
+//include dataModule
+const dataModule = require('./modules/dataModules')
 
 const app = expresss()
 app.use(expresss.static(__dirname + '/public'))
@@ -44,7 +47,34 @@ app.get('/faq', (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login')
 });
+app.get('/register', (req, res) => {
+    res.render('register')
+});
+app.post('/register', (req, res) => {
+    console.log(req.body);
+    //2 data error
+    // 1 user registry suceefully
+    // 3 user is exist
+    // 4 server is error
+    const email = req.body.email
+    const password = req.body.password
+    const repassword = req.body.repassword
+    if (email && password && password == repassword) {
+        dataModule.registerUser(email,password).then(() => {
+            res.json(1)
+        }).catch(error => {
+            if (error == "exist") {
+                res.json(3) 
+            }else[
+                res.json(4)
+            ]
+        })
+    }else{
+        res.json(2)
+    }
 
-app.listen(3000, () => {
-    console.log('App listening on port 3000!');
+    
+});
+app.listen(4000, () => {
+    console.log('App listening on port 4000!');
 });

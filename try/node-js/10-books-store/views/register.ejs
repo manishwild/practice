@@ -172,7 +172,84 @@
             </div>
         </div>
     </footer>
+    <div class="modal" tabindex="-1" role="dialog" id="resultModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <%- include('partials/htmlJs') %>
+    <script>
+        document.querySelector('submitbtn').addEventListener('click',e =>{
+            e.preventDefault()
+
+            const email = document.querySelector('#username').value.trim()
+            const password = document.querySelector('#inputPassword').value.trim()
+            const repassword = document.querySelector('#inputPassword1').value.trim()
+            if (email && password && password == repassword) {
+
+                //create object to be sent
+                const sentObj = {
+                    email,
+                    password,
+                    repassword
+                }
+                fetch('/register',{
+                method: 'POST',
+                headers: {
+                        'Content-Type': 'application/json'
+                    },
+                body: JSON.stringify(sentObj)    
+               }).then(response =>{
+                   if (response.status == 200) {
+                       response.json().then(data =>{
+                           //console.log(data);
+                           switch (data) {
+                               case 1:
+                               showModal(false,"Register Sucess",'You can go to login Page...')
+                                   break;
+                                case 2:
+                               showModal(true,"Missing Entries",'You have miss some Entries or your go to login Page')
+                                   break;
+                                case 3:
+                               showModal(true,"Email is Registered",'This Email already register to system')
+                                   break;       
+                                case 4:
+                               showModal(true,"Server Error",'Please cont system admin')
+                                   break;
+                               default:
+                               showModal(true,"Server Error",'Please cont system admin')
+                                   break;
+                           }
+                           
+                       }).catch(errror =>{
+                           console.log(error);
+                           showModal(true,"error on getting data",error.message)
+                       })
+                   }
+               }).catch(errror =>{
+                           console.log(error);
+                           showModal(true,"server Side error",error.message)
+                       })
+           }else{
+               showModal(true,"missing entries","you miss some entries or your password does not match repassword")
+           } 
+        })
+        
+
+    </script>
 </body>
 
 </html>
