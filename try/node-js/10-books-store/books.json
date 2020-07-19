@@ -1,0 +1,11 @@
+{
+    "books": [{
+        "id": 1,
+        "title": "lion king",
+        "description": "<p>wdsasadds</p>",
+        "imgs": ["/uploaded/lion_king_1_0.png"],
+        "pdfUrl": "/uploaded/lion_king_1.pdf",
+        "userid": 1
+    }],
+    "newid": 2
+}

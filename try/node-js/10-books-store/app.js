@@ -20,7 +20,7 @@ const sessionOptions = {
     secret: 'bookstore',
     resave: false,
 saveUninitialized: true,
-cookie: { secure: true } 
+cookie: { } 
 }
 // use a session
 app.use(session(sessionOptions))
@@ -31,6 +31,7 @@ app.use(fileupload({
     limits: { fileSize: 50 * 1024 * 1024 }
 }))
 
+app.use('/admin',adminRouter);
 
 app.get('/', (req, res) => {
     res.render('main')
