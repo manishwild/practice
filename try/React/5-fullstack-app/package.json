@@ -1,5 +1,5 @@
 {
-  "name": "13-mongoose-scratch",
+  "name": "5-fullstack-app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25"
+    "validator": "^13.1.1"
   }
 }
