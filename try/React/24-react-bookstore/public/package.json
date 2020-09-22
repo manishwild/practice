@@ -1,5 +1,5 @@
 {
-  "name": "21-fullstack-project",
+  "name": "24-book-store",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -22,10 +22,12 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "faker": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "reactstrap": "^8.5.1"
+    "reactstrap": "^8.5.1",
+    "redux": "^4.0.5",
+    "validator": "^13.1.1"
   }
 }
